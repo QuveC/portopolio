@@ -6,7 +6,7 @@ import Porto from "../components/porto";
 import Navbar from "../components/navbar";
 const Home = () => {
   return (
-    <div className="bg-slate-900">
+    <div className="">
       
    <Navbar />
    <Hero />

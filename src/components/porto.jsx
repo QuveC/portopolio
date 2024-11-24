@@ -5,7 +5,7 @@ const porto = () => {
     
   return (
   
-    <div className="w-full flex flex-col justify-center items-center text-neutral-200 py-12">
+    <div className="w-full flex flex-col justify-center items-center text-black py-12">
     <div className="w-[90%] md:w-[75%] lg:w-[60%] flex flex-col">
       <div className="text-center mb-14 mt-10">
         <span className="text-slate-200 font-mono text-2xl mb-10">
