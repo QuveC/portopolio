@@ -1,35 +1,35 @@
 import React from "react";
-import Vincitore from "../Asset/portopolio/Vincitore.png"
-import cms from "../Asset/portopolio/hero temlate 2.png"
-import Wedding from "../Asset/portopolio/Screenshot 2024-11-26 144051.png"
+import Vincitore from "../Asset/portopolio/Vincitore.png";
+import cms from "../Asset/portopolio/hero temlate 2.png";
+import Wedding from "../Asset/portopolio/Screenshot 2024-11-26 144051.png";
 
 const Porto = () => {
   const portfolioItems = [
     {
       title: "Website Cms",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec libero vel turpis semper condimentum.",
+        "Website Dinamis Company Profile.",
       image: cms,
       link: "#",
     },
     {
       title: "Vincitore Course",
       description:
-        "Curabitur vehicula nisl eu libero aliquet, euismod cursus lorem fermentum.",
+      "Website Course Bahasa  .",
       image: Vincitore,
       link: "#",
     },
     {
       title: "Web Invitation Wedding",
       description:
-        "Aliquam erat volutpat. Donec bibendum turpis sed nunc viverra scelerisque.",
+        "Website Wedding Invitation.",
       image: Wedding,
       link: "#",
     },
   ];
 
   return (
-    <div className="bg-gray-100 min-h-screen py-16">
+    <div className="bg-gray-100 min-h-screen py-16" id="portfolio">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-red-500 mb-4">Portofolio</h1>
@@ -40,12 +40,12 @@ const Porto = () => {
           {portfolioItems.map((item, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-lg p-6 flex items-center mb-8"
+              className="bg-white shadow-md rounded-lg p-6 flex flex-col md:flex-row items-center mb-8"
             >
               {index % 2 === 0 ? (
                 <>
-                  <div className="w-1/2 pr-8">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-4">{item.title}</h3>
+                  <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-6 md:mb-0">
+                    <h3 className="text-2xl  md:text-4xl font-bold text-gray-800 mb-4">{item.title}</h3>
                     <p className="text-gray-600 mb-4">{item.description}</p>
                     <div className="flex justify-start">
                       <a
@@ -56,7 +56,7 @@ const Porto = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="w-1/2">
+                  <div className="w-full md:w-1/2">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -66,15 +66,15 @@ const Porto = () => {
                 </>
               ) : (
                 <>
-                  <div className="w-1/2">
+                  <div className="w-full md:w-1/2 mb-6 md:mb-0">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="rounded-lg shadow-md"
                     />
                   </div>
-                  <div className="w-1/2 pl-8">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-4">{item.title}</h3>
+                  <div className="w-full md:w-1/2 pl-0 md:pl-8">
+                    <h3 className="text-2xl  md:text-4xl font-bold text-gray-800 mb-4">{item.title}</h3>
                     <p className="text-gray-600 mb-4">{item.description}</p>
                     <div className="flex justify-start">
                       <a

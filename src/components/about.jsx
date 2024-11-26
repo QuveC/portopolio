@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div id="About">
       <section className="bg-white p-8 my-28">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start">
           <div className="md:w-1/2 text-left mb-8 md:mb-0">
@@ -14,10 +14,10 @@ const About = () => {
 
           <div className="md:w-1/2 text-left">
             <p className="text-xl md:text-2xl text-gray-800 mb-4">
-              Developer with a design flair, embracing challenges to create engaging digital experiences.
+            Driven developer with a passion for solving complex problems and building innovative digital solutions.
             </p>
             <p className="text-lg md:text-xl text-gray-700">
-              Crafting seamless digital experiences as both a full-stack developer and UI designer, I merge code and design for user-friendly solutions.
+            With expertise in full-stack development, I create efficient, scalable, and seamless applications that push the boundaries of technology.
             </p>
           </div>
         </div>

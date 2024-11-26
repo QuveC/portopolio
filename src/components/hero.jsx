@@ -23,12 +23,13 @@ const Hero = () => {
           HI, I'M Ahmad Aqiela
         </h1>
         <h3 className="text-xl md:text-2xl font-medium text-Button mb-4">
-          A Front-end Developer
+          A Full Stack Developer
         </h3>
         <h4 className="text-lg md:text-xl font-normal text-black mb-8">
           BASED IN INDONESIA
         </h4>
         <div className="flex gap-0 group">
+          <a href=" https://wa.me/+623818375286" target="_blank">
           <button className="bg-black text-white px-8 py-3 rounded-l-md group-hover:bg-red-500 transition-colors duration-300">
             Got a project?
           </button>
@@ -36,6 +37,7 @@ const Hero = () => {
           <button className="bg-white text-black border border-black px-8 py-3 rounded-r-md group-hover:border-red-500 group-hover:text-Button transition-colors duration-300">
             Let's talk.
           </button>
+          </a>
         </div>
       </div>
       <div className="relative mt-8 md:mt-0 flex justify-center items-center flex-col">
