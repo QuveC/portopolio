@@ -28,9 +28,9 @@ const Sertifikat = () => {
 
   return (
     <div className="w-full flex flex-col justify-center items-center text-neutral-200 py-12">
-      <div className="w-[90%] md:w-[75%] lg:w-[80%] flex flex-col">
+      <div className="w-full max-w-screen-xl mx-auto px-4"> 
         <div className="text-center mb-14 mt-10">
-          <span className="text-black font-mono text-2xl mb-10">Sertifikat</span>
+          <span className="text-black font-normal text-2xl mb-10">Sertifikat</span>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {Portopolio.map((item) => (
