@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../components/hero";
 import Skill from "../components/skill";
 import Sertifikat from "../components/sertifikat";
@@ -8,8 +8,16 @@ import Back from "../components/back";
 import About from "../components/about";
 import Navbar from "../components/navbar";
 import { Link } from "react-router-dom";
+import Aos from "aos";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({
+      startEvent: "DOMContentLoaded",
+      easing: "ease-out-cubic",
+    });
+  });
+
   const sections = [
     { id: "hero", component: <Hero /> },
     { id: "skill", component: <Skill /> },

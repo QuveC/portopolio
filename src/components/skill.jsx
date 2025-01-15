@@ -3,13 +3,17 @@ import Marquee from "react-fast-marquee";
 
 const Skill = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center text-black py-12">
+    <div
+      className="w-full flex flex-col justify-center items-center text-black py-12"
+      data-aos="zoom-out"
+      data-aos-delay="1700"
+    >
       <div className="w-full flex flex-col">
         <Marquee autoFill pauseOnClick className="mb-6">
           <div className="bg-white m-1 rounded-xl p-4 font-bold text-2xl cursor-pointer text-sky-400 border-2 border-sky-400">
             TailwindCSS
           </div>
-         
+
           <div className="bg-white m-1 rounded-xl p-4 font-bold text-2xl cursor-pointer text-sky-400 border-2 border-sky-400">
             Golang
           </div>

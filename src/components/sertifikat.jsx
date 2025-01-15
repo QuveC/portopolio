@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import serti1 from "../Asset/sertifikat/bnsp.png";
 import serti2 from "../Asset/sertifikat/c++.png";
 import serti3 from "../Asset/sertifikat/creatonme.png";
@@ -12,6 +12,8 @@ import serti10 from "../Asset/sertifikat/laravel.png";
 import serti11 from "../Asset/sertifikat/sakubi.png";
 
 const Certificates = () => {
+
+
   const portfolio = [
     { id: 1, image: serti1, title: "Certificate BNSP", description: "Official BNSP certificate." },
     { id: 2, image: serti2, title: "Certificate C++", description: "C++ certification." },
@@ -27,16 +29,18 @@ const Certificates = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col justify-center items-center text-neutral-200 py-12"id="Certifikat">
-      <div className="w-full max-w-screen-xl mx-auto px-4"> 
+    <div className="w-full flex flex-col justify-center items-center text-neutral-200 py-12" id="Certifikat">
+      <div className="w-full max-w-screen-xl mx-auto px-4">
         <div className="text-center mb-14 mt-10">
           <span className="text-black font-normal text-2xl mb-10">Certificates</span>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {portfolio.map((item) => (
+          {portfolio.map((item, index) => (
             <div
               key={item.id}
               className="bg-[#202020] p-2 rounded-sm shadow-lg hover:shadow-2xl transition-shadow duration-300 relative"
+              data-aos="flip-left"
+              data-aos-delay={index * 200} 
             >
               <img
                 src={item.image}
